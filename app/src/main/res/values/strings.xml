@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">EventBuddy</string>
+
+    <string name="event_park_theater">2019 Theater in the Park</string>
+    <string name="event_winter_fest">2019 Bend Winter Festival</string>
+    <string name="event_brewfest">2019 Bend Brewfest</string>
+
+    <string name="location_park_theater">Drake Park</string>
+    <string name="location_winter_fest">Downtown</string>
+    <string name="location_brewfest">Les Schwab Amphitheatre</string>
+
+    <string name="date_park_theater">August 2019</string>
+    <string name="date_winter_fest">February 2019</string>
+    <string name="date_brewfest">August 2019</string>
 </resources>
