@@ -6,8 +6,10 @@ public class Event {
     private int mLocationResId;
     private int mDateResId;
 
-    public Event(int nameResId) {
+    public Event(int nameResId, int locationResId, int dateResId) {
         mNameResId = nameResId;
+        mLocationResId = locationResId;
+        mDateResId = dateResId;
     }
 
     public int getNameResId() {
