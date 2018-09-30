@@ -1,0 +1,3 @@
+# EventBuddy
+
+EventBuddy is a mobile application designed for live production professionals that assists with the planning of various event including concerts, music festivals, theater productions, and more. EventBuddy is designed to be a light-weight solution that incorporates list detailing for gig times/dates, line items for gear and equipment, and invoicing/price quotes for production clientele.
