@@ -18,8 +18,10 @@ public class EventActivity extends AppCompatActivity {
     private Event[] mEventBank = new Event[] {
             new Event(R.string.event_park_theater, R.string.location_park_theater, R.string.date_park_theater),
             new Event(R.string.event_brewfest, R.string.location_brewfest, R.string.date_brewfest),
-            new Event(R.string.event_winter_fest, R.string.location_winter_fest, R.string.date_brewfest),
+            new Event(R.string.event_winter_fest, R.string.location_winter_fest, R.string.date_winter_fest),
     };
+
+    private int mCurrentIndex = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +36,20 @@ public class EventActivity extends AppCompatActivity {
         mNextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                mCurrentIndex = (mCurrentIndex + 1) % mEventBank.length;
+                updateEvent();
             }
         });
+
+        updateEvent();
+    }
+
+    private void updateEvent() {
+        int eventName = mEventBank[mCurrentIndex].getNameResId();
+        int eventLocation = mEventBank[mCurrentIndex].getLocationResId();
+        int eventDate = mEventBank[mCurrentIndex].getDateResId();
+        mEventName.setText(eventName);
+        mEventLocation.setText(eventLocation);
+        mEventDate.setText(eventDate);
     }
 }
